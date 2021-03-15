@@ -1,0 +1,18 @@
+<html>
+<head> </head>
+<script language="Javascript">
+function test () { 
+	var val1=document.kirim. T1. value // variabel val1 akan menyimpan nilai document.kirim.T1.value
+	if (val1%2==0) // jika val1 modulus 2 memiliki nilai sama dengan 0
+	document.kirim.T2. value="bilangan genap" // bernilai bilangan genap
+	else // jika tidak bernilai bilangan genap maka akan menampilkan bilangan ganjil 
+	document.kirim.T2. value="bilangan ganjil" // bernilai bilangan ganjil
+}
+</script>
+<body>
+	<form method="POST" name="kirim"> <!-- membuat form dengan method post dan nama kirim -->
+		<p> BIL <input type="text" name="T1" size="20"> MERUPAKAN BIL <input type="text" name="T2" SIZE="20"> </P>  
+		<p> <input type ="button" name="B1" value="TEBAK" onclick=test()> </p> <!--membuat paragraph dan input type button dengan nama B1 dan ketika diklik akan menghasilkan nilai -->
+	</form>
+</body>
+</html>

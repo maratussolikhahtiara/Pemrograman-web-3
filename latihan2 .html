@@ -1,0 +1,52 @@
+<html>
+<head>
+	<title> Konversi Nilai Angka Menjadi Nilai Huruf </title>
+</head>
+<script language="Javascript">
+	function perkalian() { 
+		var bil1=parseFloat(document.calculator.T1.value); // variabel bill1 memiliki nilai input teks T1 
+		var bill2=parseFloat(document.calculator.T2.value); // variabel bill2 memiliki nilai input teks T2
+		var hasil=bill1*bill2; // var hasil memiliki nilai inputan dari hasil perkalian bil1 dan bill2 
+		document.calculator.T3.value = hasil // T3 sama dengan menampilkan variabel hasil
+}
+			function pembagian() { 
+		var bil1=parseFloat(document.calculator.T1.value); // variabel bill1 memiliki nilai input teks T1 
+		var bill2=parseFloat(document.calculator.T2.value); // variabel bill2 memiliki nilai input teks T2
+		var hasil=bill1/bill2; // var hasil memiliki nilai inputan dari hasil pembagian bil1 dan bill2 
+		document.calculator.T3.value = hasil // T3 sama dengan menampilkan variabel hasil 
+}
+			function tambah() { 
+		var bil1=parseFloat(document.calculator.T1.value); // variabel bill1 memiliki nilai input teks T1 
+		var bill2=parseFloat(document.calculator.T2.value); // variabel bill2 memiliki nilai input teks T2
+		var hasil=bill1+bill2; // var hasil memiliki nilai inputan dari hasil tambah bil1 dan bill2 
+		document.calculator.T3.value = hasil // T3 sama dengan menampilkan variabel hasil 
+}
+		function pengurangan() { 
+		var bil1=parseFloat(document.calculator.T1.value); // variabel bill1 memiliki nilai input teks T1 
+		var bill2=parseFloat(document.calculator.T2.value); // variabel bill2 memiliki nilai input teks T2
+		var hasil=bill1-bill2; // var hasil memiliki nilai inputan dari hasil pengurangan bil1 dan bill2 
+		document.calculator.T3.value = hasil // T3 sama dengan menampilkan variabel hasil 
+}
+</script>
+<body>
+	<form method="post" name="hitung"> <!-- method dibuat dengan nama hitung -->
+	<caption>Calculator</caption>
+	<p>Bilangan 1<input type="text" name="T1" size="20"></p>
+	
+	<p>Bilangan 2<input type="text" name="T2" size="20"></p>
+	<br>
+	
+	<p>Hasil<input type="text" name="T3" size="20"></p>
+	
+	<td colspan="3" align="center">
+	<div class=tombol> <!-- memanggil class tombol -->
+	<input type="button" name="b1" value="X" onclick=perkalian()> <!-- membuat tombol yang ketika diklik akan menampilkan perkalian -->
+	<input type="button" name="b2" value="/" onclick=pembagian()> <!-- membuat tombol yang ketika diklik akan menampilkan pembagian-->
+	<input type="button" name="b3" value="+" onclick=tambah()> <!-- membuat tombol yang ketika diklik akan menampilkan tambah -->  
+	<input type="button" name="b4" value="-" onclick=pengurangan()> <!-- membuat tombol yang ketika diklik akan menampilkan pengurangan -->
+	</td>
+	</tr>
+	
+</form>
+</body>
+</html>	
